@@ -1,0 +1,60 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "w: serve website",
+            "type": "shell",
+            "command": "bundle exec jekyll serve --livereload",
+            "problemMatcher": []
+        },
+        {
+            "label": "w: drafts",
+            "type": "shell",
+            "command": "bundle exec jekyll serve --drafts",
+            "problemMatcher": []
+        },
+        {
+            "label": "b: build website",
+            "type": "shell",
+            "command": "bundle exec jekyll build",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "u: update",
+            "type": "shell",
+            "command": "bundle update",
+            "problemMatcher": []
+        },
+        {
+            "label": "i: install",
+            "type": "shell",
+            "command": "bundle install",
+            "problemMatcher": []
+        },
+        {
+            "label": "t: test",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "ruby .github/htmlproofer.rb",
+            "dependsOn": [
+                "b: build"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+        },
+        {
+            "label": "c: clean",
+            "type": "shell",
+            "command": "rm -fr _site vendor .jekyll-cache",
+            "problemMatcher": [],
+        }
+    ]
+}

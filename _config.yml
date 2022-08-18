@@ -1,0 +1,29 @@
+permalink: pretty
+
+# url:
+# baseurl: 
+# title: 
+# author: 
+# description: 
+date_format: "ordinal"
+
+# Use the following plug-ins
+plugins:
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-redirect-from # Set up custom redirects
+  - jekyll-seo-tag
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jemoji # Github flavored emoji
+  
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
+  - .gitignore
+  - .jekyll-cache/
+
+whitelist: 
+  - jekyll-redirect-from
