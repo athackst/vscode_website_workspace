@@ -4,7 +4,8 @@ permalink: pretty
 # baseurl: 
 # title: 
 # author: 
-# description: 
+# description:
+repository: athackst/vscode_website_workspace
 date_format: "ordinal"
 
 # Use the following plug-ins
