@@ -12,5 +12,10 @@
     "cSpell.words": [
         "htmlproofer",
         "jemoji"
-    ]
+    ],
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "files.insertFinalNewline": false
+    }
 }
