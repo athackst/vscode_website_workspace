@@ -26,7 +26,8 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sh .devcontainer/post-create.sh",
+	// This command is already triggered by the dockerfile, adding it here results in it running twice.
+	// "postCreateCommand": "sh .devcontainer/post-create.sh",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

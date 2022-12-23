@@ -41,10 +41,11 @@
             "label": "t: test",
             "type": "shell",
             "problemMatcher": [],
-            "command": "ruby .github/htmlproofer.rb",
+            "command": "bundle exec ruby .github/htmlproofer.rb",
             "dependsOn": [
                 "b: build"
             ],
+            "dependsOrder": "sequence",
             "group": {
                 "kind": "test",
                 "isDefault": false
