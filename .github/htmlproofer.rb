@@ -11,7 +11,7 @@ options = {
     cookiefile: ".cookies",
     cookiejar: ".cookies"
   },
-  ignore_urls: [/.*.md/]
+  ignore_urls: []
 }
 
 HTMLProofer.check_directory('./_site', options).run

@@ -28,3 +28,7 @@ exclude:
 
 whitelist: 
   - jekyll-redirect-from
+
+github:
+  source:
+    branch: main
