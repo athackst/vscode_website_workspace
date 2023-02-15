@@ -8,7 +8,10 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-			"version": "latest"
+			"version": "18"
+		},
+		"ghcr.io/devcontainers/features/ruby:1": {
+			"version": "3.1.3"
 		}
 	},
 	// Local aliases settings as mounts
@@ -33,20 +36,24 @@
 	// "customizations": {},
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
-	"extensions": [
-		// yaml for data files
-		"redhat.vscode-yaml",
-		// jekyll
-		"ginfuru.ginfuru-vscode-jekyll-syntax",
-		"ginfuru.vscode-jekyll-snippets",
-		// markdown
-		"yzhang.markdown-all-in-one",
-		"davidanson.vscode-markdownlint",
-		// html/css
-		"ecmel.vscode-html-css",
-		"aeschli.vscode-css-formatter",
-		// editing
-		"streetsidesoftware.code-spell-checker",
-		"ms-vscode.wordcount"
-	]
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				// yaml for data files
+				"redhat.vscode-yaml",
+				// jekyll
+				"ginfuru.ginfuru-vscode-jekyll-syntax",
+				"ginfuru.vscode-jekyll-snippets",
+				// markdown
+				"yzhang.markdown-all-in-one",
+				"davidanson.vscode-markdownlint",
+				// html/css
+				"ecmel.vscode-html-css",
+				"aeschli.vscode-css-formatter",
+				// editing
+				"streetsidesoftware.code-spell-checker",
+				"ms-vscode.wordcount"
+			]
+		}
+	}
 }
