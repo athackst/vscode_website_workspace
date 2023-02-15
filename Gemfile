@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'rouge'
+gem 'commonmarker'
 
 group :jekyll_plugins do
   gem 'github-pages'
