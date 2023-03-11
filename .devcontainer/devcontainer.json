@@ -1,17 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-	"name": "Jekyll",
+	"name": "Ruby",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:bullseye",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-			"version": "18"
-		},
-		"ghcr.io/devcontainers/features/ruby:1": {
-			"version": "3.1.3"
+			"version": "latest"
 		}
 	},
 	// Local aliases settings as mounts
@@ -30,7 +27,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// This command is already triggered by the dockerfile, adding it here results in it running twice.
-	// "postCreateCommand": "sh .devcontainer/post-create.sh",
+	"postCreateCommand": "sh .devcontainer/post-create.sh",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
