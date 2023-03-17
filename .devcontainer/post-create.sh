@@ -1,12 +1,9 @@
 #!/bin/sh
 
-# Get desired ruby version
-export RUBY_VERSION=$(cat .ruby-version)
-
-# Install the desired ruby version
-rbenv install ${RUBY_VERSION}
-echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
-source ~/.bashrc
+# Get the current ruby version ansd set .ruby-version
+ruby_version=$(ruby -v | awk '{print $2}')
+printf %s "$ruby_version" > .ruby-version
+echo "Ruby version $ruby_version set in .ruby-version file"
 
 # Install the version of Bundler.
 if [ -f Gemfile.lock ] && grep "BUNDLED WITH" Gemfile.lock > /dev/null; then
