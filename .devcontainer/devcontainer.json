@@ -49,7 +49,9 @@
 				"aeschli.vscode-css-formatter",
 				// editing
 				"streetsidesoftware.code-spell-checker",
-				"ms-vscode.wordcount"
+				"ms-vscode.wordcount",
+				// actions
+				"github.vscode-github-actions"
 			]
 		}
 	}
